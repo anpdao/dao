@@ -10,5 +10,11 @@ public class SpringHelperTest {
 		ProUser proUser = userServiceDao.isUserExists("pawan", "pawan");
 		System.out.println("pro user : " + proUser.getUserName());
 		System.out.println("pro password : " + proUser.getPassword());
+		
+		proUser = new ProUser();
+		proUser.setId(2);
+		proUser.setUserName("amar");
+		proUser.setPassword("amar");
+		userServiceDao.create(proUser);
 	}
 }

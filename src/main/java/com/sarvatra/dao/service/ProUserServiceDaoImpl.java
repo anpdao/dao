@@ -5,10 +5,10 @@ import java.util.List;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 
-import com.sarvatra.dao.GenericDao;
+import com.sarvatra.dao.GenericDaoImpl;
 import com.sarvatra.dao.model.ProUser;
 
-public class ProUserServiceDaoImpl extends GenericDao<ProUser> implements ProUserServiceDao{
+public class ProUserServiceDaoImpl extends GenericDaoImpl<ProUser> implements ProUserServiceDao{
 	public ProUserServiceDaoImpl(EntityManagerFactory entityFactory) {
 		super(entityFactory);
 	}
