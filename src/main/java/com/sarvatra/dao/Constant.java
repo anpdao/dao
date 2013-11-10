@@ -1,5 +1,5 @@
 package com.sarvatra.dao;
 
 public interface Constant {
-	String BEAN_LOGIN_SERVICE= "loginService";
+	String USER_SERVICE_DAO= "proUserServiceDao";
 }

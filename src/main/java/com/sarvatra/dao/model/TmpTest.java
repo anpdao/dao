@@ -13,14 +13,14 @@ public class TmpTest {
 	private String empName;
 	
 	@Id
-	@Column(name="id")
-	private String id;
+	@Column(name="Id")
+	private int id;
 	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 	
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

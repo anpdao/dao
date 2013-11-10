@@ -3,11 +3,11 @@ package com.sarvatra.dao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.sarvatra.dao.service.LoginService;
+import com.sarvatra.dao.service.ProUserServiceDao;
 
 public class SpringHelper{
-	public LoginService getLoginService(){
+	public ProUserServiceDao getUserServiceServiceDao(){
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("dao-application-context.xml");
-		return (LoginService)appContext.getBean(Constant.BEAN_LOGIN_SERVICE);
+		return (ProUserServiceDao)appContext.getBean(Constant.USER_SERVICE_DAO);
 	}
 }
