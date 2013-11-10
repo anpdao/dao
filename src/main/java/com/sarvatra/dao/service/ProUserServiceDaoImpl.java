@@ -18,7 +18,9 @@ public class ProUserServiceDaoImpl extends GenericDao<ProUser> implements ProUse
 		Query query = em.createQuery(queryStr);
 		query.setParameter("userName", userName);
 		query.setParameter("password", password);
+		System.out.println("*****dao userName " + userName);
 		List<ProUser> proUsers = query.getResultList();
+		System.out.println("**** proUser : " + proUsers);
 		if(proUsers != null && proUsers.size() == 1){
 			return proUsers.get(0);
 		}
